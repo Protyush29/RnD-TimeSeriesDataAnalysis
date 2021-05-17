@@ -1,0 +1,24 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="simplecalculator.calculator.print" />
+          <option value="simplecalculator.calculator.type" />
+          <option value="simplecalculator.calculator.str" />
+          <option value="simplecalculator.calculator.sum" />
+          <option value="simplecalculator.calculator.int" />
+          <option value="simplecalculator.calculator.len" />
+          <option value="simplecalculator.calculator.float" />
+          <option value="PyPDF2" />
+          <option value="pdfextractorminer.pdfminer" />
+          <option value="dbmanager.*" />
+          <option value="camelot" />
+          <option value="gridfs" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

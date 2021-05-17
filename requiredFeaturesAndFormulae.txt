@@ -1,0 +1,67 @@
+* Manoever Bewertung : GV (if its close to 1 its valid else invalid)
+** Lenkradkontrolle : LK
+** Lenkfrequenz : LF
+** Querbeschikontrolle : QK
+** Signalbewertung : SB
+
+>> GV = 0.25*LK + 0.25*LF + 0.4*QK + 0.1*SB
+
+    ** Lenkradkontrolle : LK
+
+    >> LK = 0.4(Lenk_PeriodKlirrFaktor)+0.6(Lenk_PeriodStdAmplitude)
+
+        *** Lenk_PeriodKlirrFaktor
+
+        { 0% Bereich : 0.2 , 100% Bereich : 0.075 , Max Frequenz : 0.3 , Min Frequenz : 0.05 }
+
+        Lenkadwin : ??
+
+        *** Lenk_PeriodStdAmplitude
+
+        { 0% Bereich : 0.2 , 100% Bereich : 0.04 , Max Frequenz : 0.3 , Min Frequenz : 0.0 }
+
+        Lenkadwin : ??
+
+
+    ** Lenkfrequenz : LF
+
+    >> LF = PeriodMittFrequenz_4
+
+        *** PeriodMittFrequenz_4
+
+        { 0% Bereich(Hoch)Hz : 0.2 , 100% Bereich(Hoch)Hz : 0.175 , 0% Bereich(Teif)Hz : 0 , 100% Bereich(Teif)Hz : 0.13 , Max Frequenz : 0.5 , Min Frequenz : 0.05 }
+
+        Lenkadwin : ??
+
+
+    ** Querbeschikontrolle : QK
+
+    >> QK = 0.5(PeriodMittAmplitude_ay)+0.5(PeriodStdAmplitude)
+
+        *** Lenk_PeriodKlirrFaktor
+
+        { 0% Bereich(Hoch) : 4.6 , 100% Bereich(Hoch) : 4.2 , 0% Bereich(Teif) : 3.4 , 100% Bereich(Teif) : 3.8 , Max Frequenz : 0.3 , Min Frequenz : 0.1 }
+
+        Querbeschl : ??
+
+        *** Lenk_PeriodStdAmplitude
+
+        { 0% Bereich : 0.3 , 100% Bereich : 0.1 , Max Frequenz : 0.3 , Min Frequenz : 0.0 }
+
+        Querbeschl : ??
+
+
+    ** Signalbewertung : SB
+
+    >> SB = ( akt_Fahrgeschw > 75 ) ? Mittelwert_dH : 100
+
+        *** PeriodMittFrequenz_4
+
+        { 0% Bereich(Hoch) : 10 , 100% Bereich(Hoch) : 2 , 0% Bereich(Teif) : -10 , 100% Bereich(Teif) : -2 }
+
+        Lenkadwin : ??
+
+
+
+
+
